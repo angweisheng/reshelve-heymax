@@ -2,6 +2,8 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { CircleUser, HandCoins, Recycle } from "lucide-react";
+import BookReel from "@/components/BookReel";
+
 
 const perks = [
   {
@@ -40,7 +42,7 @@ export default function Home() {
             <Button variant="ghost">Get started &rarr;</Button>
           </div>
         </div>
-        {/* TODO: list books */}
+        <BookReel title='Brand new' subtitle='test' href="/books"/>
       </MaxWidthWrapper>
       <section className='border-t border-gray-200 bg-gray-50'>
         <MaxWidthWrapper className='py-20'>
