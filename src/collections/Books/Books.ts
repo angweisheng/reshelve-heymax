@@ -12,7 +12,11 @@ export const Books: CollectionConfig = {
   admin: {
     useAsTitle: "name",
   },
-  access: {},
+  access: {
+    update: ({ req }) => {
+      return req.user.role === "admin";
+    }
+  },
   fields: [
     {
       name: "user",

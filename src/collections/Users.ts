@@ -7,6 +7,9 @@ export const Users: CollectionConfig = {
        read: () => true,
        create: () => true
     },
+    admin: {
+        hidden: ({user}) => user.role !== 'admin',
+    },
     fields: [
         {
             name: "role",
