@@ -122,5 +122,14 @@ export const Books: CollectionConfig = {
         }
       ]
     },
+    {
+      name: "availability",
+      type: 'number',
+      label: 'Availability',
+      required: true,
+      defaultValue: 1,
+      hidden: true
+
+    }
   ],
 };
