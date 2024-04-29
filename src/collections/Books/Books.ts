@@ -2,6 +2,13 @@ import { CollectionConfig } from "payload/types";
 
 export const Books: CollectionConfig = {
   slug: "books",
+  hooks: {
+    beforeChange: [
+      ({ req, data }) => {
+        return { ...data, user: req.user.email };
+      },
+    ],
+  },
   admin: {
     useAsTitle: "name",
   },

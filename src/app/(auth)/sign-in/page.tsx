@@ -43,6 +43,7 @@ const Page = () => {
             return
         }
         router.push("/")
+        router.refresh()
         
     },
     
