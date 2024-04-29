@@ -98,6 +98,8 @@ Unfortunately, this project is unfinished with some features unimplemented due t
    yarn dev
    ```
 
+- Homepage: [http://localhost:3000](http://localhost:3000)
+- Admin Page: [http://localhost:3000/list](http://localhost:3000/list)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
